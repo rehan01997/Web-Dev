@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the developer page">
+    <meta name="keywords" content="Web design , Web development">
+    <meta name="robots" content="NOINDEX , NOFOLLOW">
+    <title>First web site</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+        .card{           
+            padding : 20px;
+            background :azure;
+            margin-bottom: 10px;
+        }
+        nav
+        {
+            background : #333;
+            border : 1px solid #cccccc;
+            margin-bottom: 10px;
+        }
+        .te
+        {
+            color : yellow;            
+        }
+        .tf
+        {
+            color : white;
+        }
+        #about
+        {
+            border : 1px solid #cccccc;
+            float :left;
+            width : 69%;
+        }
+        #Contact
+        {
+            border : 1px solid #cccccc;
+            float :right;
+            width : 29%;
+        }
+        #footer
+        {
+            color : white;
+            clear: both;
+            text-align :center;
+            border : 1px solid #ccc;
+            background : #333;
+        }
+    </style>
+</head> 
+<body>  
+    <h1>WElcome</h1>
+    <h6>Welcome</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Incidunt sapiente quae est</strong> ipsum odit aliquid non totam.
+         Numquam placeat non<b>corporis ipsa</b>  soluta aut <em>porro pariatur sed tenetur</em> ? Doloribus,
+         <br>
+         <hr>
+         <br> saepe.</p>
+    <hr><br><br>
+
+    <a href="http://google.com">CLick for google </a>
+    <p><a href="http://google.com" target="_blank">Click for google</a></p>
+
+    <img src="https://source.unsplash.com/collection/190727/300x300" alt="My image1">
+    <img src="/rehan.jpg" alt="My images2" width="300">
+
+    <!-- list -->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <ol>
+        <li>Item1 </li>
+        <li>Item2 
+            <ol type="I">
+                <li>Item 21</li>
+                <li>Item 22</li>
+                <li>Item 23</li>
+            </ol>
+        </li>
+        <li>Item3 </li>
+    </ol>
+    <br> <hr>
+    <br>
+
+    <!-- table -->
+    <table>
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Second name</th>
+                <th>Roll number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>md</td>
+                <td>rehan</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>md</td>
+                <td>Zeeshan</td>
+                <td>31</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><hr>
+
+    <!-- FORM -->
+        <form action="process.php">
+            <div>
+                <label for="name" >name</label>
+                <input type="text" name="name" id="name" placeholder="Name" value="rehan">
+            </div><br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+            </div><br>
+            <div>
+                <label for="Message">Message</label><br>
+                <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="Sex">Sex</label>
+                <select name="Sex" id="Sex">
+                <option value="Male" >Male</option>
+                <option value="Female" selected>Female</option>
+                <option value="others">Others</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="Age">Age</label>
+                <input type="number" name="Age" id="Age">
+            </div>
+
+            <div><br>
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday">
+            </div><br>
+
+            <div>
+                <label for="membership">Membership</label><br>
+                <input type="radio" name="membership" id="membership" value="simple">Simple
+                <input type="radio" name="membership" id="membership" value="standard" checked>Standard
+                <input type="radio" name="membership" id="membership" value="hard">Hard
+            </div>
+
+            <div>
+                <label for=""Games">Games u like??</label>
+                <input type="checkbox" name="cricket" id="cricket">cricket
+                <input type="checkbox" name="football" id="football">football
+                <input type="checkbox" name="badminton" id="badminton">badminton
+            </div>
+            <input type="submit" name="subbmiittt" id="subbmiittt">
+            <button type="submit">submidjwdt</button>
+            <button type="reset">Reset</button>
+            
+        </form>    
+    <br><br><br><br><br>    
+    <hr>
+    <!-- SPAN ID CLASS DIV -->
+    <header id="main-header">
+        <h1>My website</h1>
+        <p>A site about me</p>
+    </header>
+
+    <nav id="main-nav" >
+        <h3 class="te">&nbsp;&nbsp;Navigate</h3>
+        <ul>
+            <li><a href="#" class="tf">Home</a></li>
+            <li><a href="#" class="tf">About</a></li>
+            <li><a href="#" class="tf">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem possimus rerum necessitatibus totam ex, autem voluptates mollitia atque odit inventore unde quibusdam laudantium facere quo molestiae minima aspernatur cupiditate nostrum deserunt doloremque velit! Unde a sit minus possimus rem harum eum eligendi cupiditate nostrum, at cumque sunt, officiis ut quidem.</p>        
+    </div>
+
+    <div id="Contact" class="card">
+        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</h3>
+        <ul>
+            <li><strong>Address</strong>  : ABC,delhi</li>
+            <li><strong>Phone</strong>  : 8888 8888</li>
+            <li><strong>Email</strong>  : rehan@coolking.com</li>
+        </ul>
+    </div><br>
+
+    <div class="clr"></div>
+    <footer id="footer">
+        <p>Copyright &copy; 2019</p>
+    </footer>
+    <br><hr>
+
+    <!-- <p>Lorem &nbsp &nbsp sipsum dolor sit amet consectetur adipisicing elit. Provident, corrupti.</p>
+    <p>&copy;</p>
+    <p>&reg;</p>
+    <p>1 &gt; 0</p>
+    <p>3 &lt; 4</p>
+    <p>&pound;</p>
+    <p>&dollar;</p>
+    <p>&cent;</p>
+    <p>&yen;</p>
+
+    <p>&hearts;</p>
+    <p>&spades;</p>
+    <p>&clubs;</p>
+    <p>&diams;;</p>
+
+    <code>
+        &lt;#include&lt;iostream&gt;
+        <br>
+        using namespace std;
+        <p>Save the file by pressing <kbd>ctrl + S</kbd></p>
+    </code> -->
+</body>
+</html> 
