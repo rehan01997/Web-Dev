@@ -1,0 +1,53 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background : #333;
+    color : #fff;
+    padding-top : 100px;
+}
+h1{
+    display: none;
+}
+/* smartphone */
+@media screen and (max-width: 500px) {
+    body{
+        background : red;
+    }
+    #Smartphone h1{
+        display: block;
+        color :royalblue;
+    }
+}
+/* tablet */
+@media (min-width: 501px) and (max-width: 768px)
+{
+    body{
+        background : Green;
+    }
+    #tablet h1{
+        display: block;
+        color : yellow;
+    }
+}
+/* Normal */
+@media ( min-width: 769px) and (max-width: 1025px)
+{
+    body{
+        background : #eea;
+    }
+    #normal h1{
+        font-size: 4.6em;
+        display: block;
+        color : green
+    }
+}
+/* landscape */
+@media ( min-width: 1026px) {
+    body{
+        background : #000;
+    }
+    #landscape h1{
+        display: block;
+        color : #fffffd;
+    }
+}

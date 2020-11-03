@@ -10,6 +10,7 @@ copyright sign	------------------------>	&copy;
 id -> #
 class -> .
 color(color-hex.com) :  #333(grey) , #f4f4f4 (cream white) ,  rgb(0,0,0) , #000000(black) , #ffffff(white) , #ccc(light grey), #344a72(facebook blue)
+1em = 20px
 
 META TAGS
 #to add description 		------------->	<meta name="description" content="this is the developer page">
@@ -193,13 +194,14 @@ background-color :
 #if suppose size of image is 10px,10px and 
   we want image in 100px,100px, then if dont want
   the image to repeat itself then			---->	background-repeat : no-repeat , repeat-x , repeat-y , repeat
-#to position the image				---->	background-position : 100px 100px  OR center center
+#to position the image				        ---->	background-position : 100px 100px  OR center center
 #to show whole image in specific frame		---->	background-size : cover
+#to contain full image                      ---->   background-size : contain
 
 #above four things can be combined in one	---->	background : url(http:\\) no-repeat 100px 100px/cover;
 
 ##PADDING AND BACKGROUND
- box-sizing: border-box;			----->	Include padding and border in the element's total width and height	
+box-sizing: border-box;			        ---->	Include padding and border in the element's total width and height	
 #padding-top : 10px;
 #padding-right : 20px;
 #padding-bottom : 10px;
@@ -228,15 +230,15 @@ OR margin : 10px 20px;	(top/down && top/bottom)
  <a class="btn" href="#">My Link</a>
  <button class="btn" >Button</button>
 
-#text-decoration: none;			--->	removes underline from link
-#a:hover{					--->	when pointer is on link then color turns red , font-size:20px
+#text-decoration: none;		            	--->	removes underline from link
+#a:hover{					                --->	when pointer is on link then color turns red , font-size:20px
             font-size: 30px;
             color : red;
         }
-# a:active{				--->	when clicked on link, then color turns coral
+# a:active{				                     --->	when clicked on link, then color turns coral
             color : coral;
         }
-#cursor: pointer;				--->	 cursor type is pointer
+#cursor: pointer;				            --->	 cursor type is pointer
 
 ## MENU
 overflow : auto/hidden/visible/scroll		--->	The overflow property specifies what should happen if content overflows an element's box.
@@ -262,8 +264,8 @@ eg :
 ##POSITION
 1)static		--->	Not effected bt top,right,down,left values
 2)Relative		--->	tblr values causes element to moved from its normal postion
-3)Absolute	--->	Postioned relative to its parent element
-4)Fixed		--->	Poitioned relative to viewport
+3)Absolute	    --->	Postioned relative to its parent element
+4)Fixed		    --->	Poitioned relative to viewport
 5)Sticky		--->	positioned based on scroll position
 position : static/relative/absolute/fixed/sticky
 top : 100px;
@@ -304,3 +306,39 @@ opacity : 0.8;              range ( 0->transparancy to 1->non transparent)
     outline : none;
     border-color : red;
 }
+
+#Responsiveness and media
+<div id="widescreen"><h1>Widescreen</h1></div>
+<div id="normal"><h1>Normal</h1></div>
+<div id="tablet"><h1>Tablet</h1></div>
+
+@media screen and (max-width: 500px) {
+    body{
+        background : red;
+    }
+    #Smartphone h1{
+        display: block;
+        color :royalblue;
+    }
+}
+/* tablet */
+@media (min-width: 501px) and (max-width: 768px)
+{
+    body{
+        background : Green;
+    }
+    #tablet h1{
+        display: block;
+        color : yellow;
+    }
+}
+
+# em and rem
+em depends on previous used property. eg font-size : 20px;
+                                         line height : 1.6em ;  // 1.6 * 20
+rem depends on default values       . eg default value of font-size : 16px;
+                                        line-height : 1.6em;    //1.6 * 26
+
+#Vh and Vw
+height : 20vh , 50vh , 100vh            --->    20 means 20/100th heightof screen
+weight : 20wh , 50wh , 100wh            --->    50w means 50/100th width of screen
