@@ -201,7 +201,7 @@ background-color :
 #above four things can be combined in one	---->	background : url(http:\\) no-repeat 100px 100px/cover;
 
 ##PADDING AND BACKGROUND
-box-sizing: border-box;			        ---->	Include padding and border in the element's total width and height	
+box-sizing: border-box;			        ---->	Include padding and border in the element's total width and height	(not margin)
 #padding-top : 10px;
 #padding-right : 20px;
 #padding-bottom : 10px;
@@ -342,3 +342,41 @@ rem depends on default values       . eg default value of font-size : 16px;
 #Vh and Vw
 height : 20vh , 50vh , 100vh            --->    20 means 20/100th heightof screen
 weight : 20wh , 50wh , 100wh            --->    50w means 50/100th width of screen
+
+#FLEX
+    1.justify-content   
+    2.align-items
+    3.align-content
+.container{
+    display: flex;
+    flex-direction : row ;           // row , col , row-reverse , col-reverse // 
+    flex-wrap : wrap;                // it sets the div acoordingly acc. to width of window ie bring div to same row or move to col due to insufficient width
+} 
+
+flex : grow shrink basis
+
+flex : 1 0 200px;                    // can grow acc to window ,will not shrink below 200px , width is 200px
+flex : 0 1 200px;                    // width can't grow after 200px, can shrink below 200px , width : 200px;
+
+.container{
+            display: flex;
+            flex-direction: row;                //content is aligned in row
+            height : 50vh;
+            background: #ccc;;
+            align-items : center;              //align content in middle 
+            align-items : stretch;             //content is aligned in row and content ele stretches itself in col
+            justify-content :space-around;     //space will be equal //space-between - space will be equal between contents
+}
+.box{
+        text-align: center;
+        padding : 10px 50px;
+        border : 1px #444 solid;
+        background : #f4f4f4;
+        margin: 20px; 
+}
+.box1{
+        align-self: flex-end;                 // it takes box1 to end in vertical direction
+}
+.box3{
+        align-self: flex-start;               // " "              top " "  
+}
