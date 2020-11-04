@@ -360,7 +360,7 @@ flex : 0 1 200px;                    // width can't grow after 200px, can shrink
 
 .container{
             display: flex;
-            flex-direction: row;                //content is aligned in row
+            flex-direction: row;               //content is aligned in row
             height : 50vh;
             background: #ccc;;
             align-items : center;              //align content in middle 
@@ -379,4 +379,16 @@ flex : 0 1 200px;                    // width can't grow after 200px, can shrink
 }
 .box3{
         align-self: flex-start;               // " "              top " "  
+}
+
+#Transition
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;    // after 2 sec width of div chnges from 100px to 300px
+}
+
+div:hover {
+  width: 300px;
 }
