@@ -32,6 +32,11 @@ LINK and IMAGES		#site where we can ge random images  -
 #to add local images            ----------------->		<img src = "\images\sample.jpg" alt="My image" >
 #to add remote image          ----------------->		<img src="http://imagesdunia.com/building" alt = "My images">
 
+#icons
+facebook    --  <i class="fab fa-facebook"></i>
+twitter     --  <i class="fab fa-twitter"></i>
+youtube     --  <i class="fab fa-youtube"></i>
+linkedin    --  <i class="fab fa-linkedin"></i>
 LIST  -- unordered and ordered list
 <ul>
   <li>Item 1 </li>
@@ -266,7 +271,7 @@ eg :
 2)Relative		--->	tblr values causes element to moved from its normal postion
 3)Absolute	    --->	Postioned relative to its parent element
 4)Fixed		    --->	Poitioned relative to viewport
-5)Sticky		--->	positioned based on scroll position
+5)Sticky		--->	Positioned based on scroll position
 position : static/relative/absolute/fixed/sticky
 top : 100px;
 bottom : 100px;
@@ -276,27 +281,27 @@ right : 10px;
 # <div id="container">
         <div id = box2 class="box"></div>
         <div id = box3 class="box"></div>
-    </div>
+  </div>
 #container{
             position: relative ;
             height: 500px;
             width: 500px;
             background : #333;
-        }
-        #box2{
-            position: absolute;
-            top : 300px;
-            right : 100px;
-            background: green;
-        }
-        #box3{
-            position : absolute;
-            left : 100px;
-            right : 400px;
-            bottom : 200px;
-            top : 100px;
-            background : red;
-        }
+}
+#box2{
+        position: absolute;    // fixed;
+        top : 300px;
+        right : 100px;
+        background: green;
+}
+#box3{
+        position : absolute;
+        left : 100px;
+        right : 400px;
+        bottom : 200px;
+        top : 100px;
+        background : red;
+}
 
 ##OPACITY
 opacity : 0.8;              range ( 0->transparancy to 1->non transparent)
@@ -350,7 +355,7 @@ weight : 20wh , 50wh , 100wh            --->    50w means 50/100th width of scre
 .container{
     display: flex;
     flex-direction : row ;           // row , col , row-reverse , col-reverse // 
-    flex-wrap : wrap;                // it sets the div acoordingly acc. to width of window ie bring div to same row or move to col due to insufficient width
+    flex-wrap : wrap;                // it sets the div acoordingly - acc. to width of window ie it brings div to same row or move to col due to insufficient width
 } 
 
 flex : grow shrink basis
@@ -378,8 +383,10 @@ flex : 0 1 200px;                    // width can't grow after 200px, can shrink
         align-self: flex-end;                 // it takes box1 to end in vertical direction
 }
 .box3{
-        align-self: flex-start;               // " "              top " "  
+        align-self: flex-start;               // " "              top " " 
+        flex :2 ;                             //box 3 will grow 3 times wrt box1 and box2
 }
+flex : 25%; //  1,1,25%;
 
 #Transition
 div {
@@ -392,3 +399,11 @@ div {
 div:hover {
   width: 300px;
 }
+
+## ::before  ## ::after
+Insert some text before the content of each <p> element:
+p::before {
+  content: "Read this: ";
+}
+
+#object-fit : cover ;       // it covers the image within area
