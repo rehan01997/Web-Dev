@@ -104,6 +104,7 @@
 .flex-grid .row{
     display: flex;
     padding : 0 4px;
+    flex-wrap: wrap;
 }
 .flex-grid .column{
     display: flex;

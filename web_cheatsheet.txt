@@ -11,6 +11,7 @@ id -> #
 class -> .
 color(color-hex.com) :  #333(grey) , #f4f4f4 (cream white) ,  rgb(0,0,0) , #000000(black) , #ffffff(white) , #ccc(light grey), #344a72(facebook blue)
 1em = 20px
+clear cache memory      -->        shift + F5
 
 META TAGS
 #to add description 		------------->	<meta name="description" content="this is the developer page">
@@ -407,3 +408,6 @@ p::before {
 }
 
 #object-fit : cover ;       // it covers the image within area
+
+##FEVICON
+website             --->        dynamic drive fevicon -> search google
