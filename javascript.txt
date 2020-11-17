@@ -1,0 +1,39 @@
+==, ===,
+Data types
+Array => map, sort,  splice, reduce , filter, slice, 
+Push, pop, shift, unshift
+Object => Object.values, Object.keys, hasOwnProperty, {...}
+
+const
+var         --> scope - global
+let         --> scope - block
+
+==          --> data type doesnt considered
+===         --> data type considered
+
+console.dir(arr)    --> array
+
+arr = [1,2,4]
+#MAP    ---->   arr.map(ele)
+
+arr.filter((item)=>{
+    return (item%2);
+})
+
+arr.slice(0,4)
+arr.splice(idx,n_of_ele)
+
+arr.shift();        --> delete from front
+arr.unshift(5);      --> push ele to front
+
+#object
+obj  = {}
+typeof obf            -->   object
+
+obj = {
+    name : "rehan"
+    desig : "engineer"
+}
+Object.values(obj)      --> print all
+Object.keys(obj)        --->print all keys
+

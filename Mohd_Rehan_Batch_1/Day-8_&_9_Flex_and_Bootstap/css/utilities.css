@@ -1,0 +1,147 @@
+.text-primary{
+    color : #28a745 !important;
+}
+.text-secondary {
+    color: #0284d0 !important;
+}
+.btn{
+    display: inline-block;
+    padding : 10px 30px;
+    color : #fff;
+    background-color: #28a745;
+    border-radius: 5px;
+    border : none;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity : 0.9;
+}
+.btn-primary, .bg-primary {
+    background: #28a745 !important;
+    color: #fff !important;
+ }
+ .btn-secondary, .bg-secondary {
+    background: #0284d0;
+    color: #fff;
+ }
+ .btn-dark, .bg-dark {
+    background: #333;
+    color: #fff;
+ }
+ .btn-light, .bg-light {
+    background: #f4f4f4 !important;
+    color: #333 !important;
+ }
+ .btn-outline{
+     background: transparent;
+     border : 1px solid #fff;
+ }
+
+ /* Flex-items */
+.flex-items{
+    display: flex;
+    align-items: center;
+    justify-content : center;
+    text-align: center;
+    height : 100%;
+}
+.flex-items > div{
+    padding : 20px;
+}
+/* about solutions */
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width : 100%;
+}
+.flex-columns .column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex : 1;
+}
+.flex-columns .column .column-1, .flex-columns .column .column-2{
+    height : 100%;
+} 
+.flex-columns img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+.flex-columns h2{
+    font-size: 40px;
+    font-weight: 100;
+}
+.flex-columns h4{
+    margin-bottom: 10px;    
+}
+.flex-columns p{
+    margin : 20px 0;
+}
+.section-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding : 30px;
+}
+.section-header h2{
+    font-size: 40px;
+    margin : 20px 0;
+}
+.section-padding{
+    padding : 20px 20px 40px;
+}
+.flex-grid .row{
+    display: flex;
+    padding : 0 4px;
+    flex-wrap: wrap;
+}
+.flex-grid .column{
+    display: flex;
+    flex : 25%;
+    flex-direction: column;
+    max-width: 25%;
+    padding : 0 4px;
+}
+.flex-grid .column img{
+    padding: 4px 0;
+}
+
+
+
+/* <section id="cases" class="cases flex-grid section-padding">
+<header class="section-header">
+    <h4>This is what we do</h4>
+    <h2>Business Cases</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, sunt.</p>
+</header>
+
+<div class="row">
+    <div class="column">
+        <img src="./image_resources/cases/cases1.jpg" alt="">
+        <img src="./image_resources/cases/cases2.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="./image_resources/cases/cases3.jpg" alt="">
+        <img src="./image_resources/cases/cases4.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="./image_resources/cases/cases5.jpg" alt="">
+        <img src="./image_resources/cases/cases6.jpg" alt="">
+    </div>
+    <div class="column">
+        <img src="./image_resources/cases/cases7.jpg" alt="">
+        <img src="./image_resources/cases/cases8.jpg" alt="">
+    </div>                
+</div>
+</section> */

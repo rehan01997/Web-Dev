@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day 4</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"w rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">      
+  </head>
+  <body>
+    <header id="header">
+        <h1><img src="img/unthinkable-logo.svg" alt="my_image">&nbsp; Unthinkable Solutions</h1>
+    </header>
+    
+    <!-- table  -->
+    <div id="container">
+      <div class="form-wrap">
+        <h1>Unthinkable Solutions</h1>
+        <p>Welcome to the website</p>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="firstName" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="lastName" id="last-name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <!-- textarea-->
+          <div class="form-group">
+            <label for="place">Address</label>
+            <textarea name="Place" id="place" cols="40" rows="5"></textarea>
+        </div>
+        <!--select box-->
+        <div class="form-group">
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!--number-->
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <!--date-->
+        <div class="form-group">
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="form-group">
+            <label for="no. of people">Experience </label>
+            <input type="number" name="no. of people" id="no. of people">
+        </div>
+        <!-- radio type-->
+        <div class="form-selectors">
+            <label for="package">Package</label>
+            <span class="in"><input type="radio" name="package" value="2 Days" id="package" > 2 Days </span>
+            <span class="in"><input type="radio" name="package" value="4 Days" id="package"> 4 Days</span>
+            <span class="in"><input type="radio" name="package" value="7 Days" id="package"> 7 Days</span>
+        </div>
+        <!--checkbox-->
+        <div class="form-selectors">
+            <label for="programming language">Pragramming language</label>
+            <span class="in"><input type="checkbox" name="prog" value="c++" id="package" > C++ </span>
+            <span class="in"><input type="checkbox" name="prog" value="Java" id="package"> Java</span>
+            <span class="in"><input type="checkbox" name="prog" value="Python" id="package"> Python</span>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <p class="bottom-text">
+        By clicking the Submit button, you agree to our
+        <a href="#">Terms & Conditions</a> and
+        <a href="#">Privacy Policy</a>
+        </p>
+        </form>
+      </div>
+    </div>
+    <footer id="footer">
+      <p>Copyright &copy 2019 <a href="#"> &nbsp;Click here to go to top</a></p>
+      <p>By - Mohd Rehan</p>
+    </footer>
+</body>
+</html>

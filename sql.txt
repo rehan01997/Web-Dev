@@ -1,0 +1,6 @@
+SELECT company_mane, city 
+    FROM compamy
+
+//select distinct columns
+SELECT 
+
