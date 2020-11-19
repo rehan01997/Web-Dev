@@ -1,6 +1,133 @@
 SELECT company_mane, city 
-    FROM compamy
+    FROM company;
 
 //select distinct columns
-SELECT 
+SELECT DISTINCT customer_name
+    FROM company;
+
+//Counting results
+SELECT COUNT(*)
+    FROM company;
+
+//Count distinct cities 
+SELECT COUNT(DISTINCT city)
+    FROM company;
+
+//add,subtract values from list
+SELECT co1+col2
+    FROM table;
+
+//list out customer_id and diff between ship date
+  and order_date for all orders
+SELECT customer_id, shipdate-orderdate
+    FROM table;
+
+/////// WHERE ////////
+SELECT customer_name,contact_no
+    FROM customers
+        WHERE city = 'berlin';
+
+//WHERE - COUNT orders
+SELECT COUNT(*)
+FROM orders
+WHERE orderdate >= '1998-01-23';
+
+//WHERE condition1 AND condition2
+SELECT COUNT(*)
+FROM orders
+WHERE shipcountry='germany' AND freight > 100;
+
+//WHERE OR 
+SELECT COUNT(*)
+FROM orders
+WHERE country='germany OR country='India OR country='Saudi';
+
+//WHERE NOT
+SELECT COUNT(*)
+FROM customers
+WHERE NOT country='germany'
+
+//WHERE AND OR NOT
+SELECT customer_name,salry
+FROM customers
+WHERE (country='germany' OR country='germany') 
+AND (freight<=100 OR freight >= 200)
+NOT salary < 2000;
+
+// WHERE BETWEEN 50 AND 100 - shortcut >= to <=
+SELECT COUNT(*)
+FROM orders
+WHERE price BETWEEN 10 AND 20;
+
+// WHERE IN  ---> WHERE OR OR OR
+SELECT COUNT(*)
+FROM orders
+WHERE id IN(2,3,4,5);       -- WHERE id=2 OR id=3 OR id=4 OR id=5 
+WHERE country IN('germany' , 'france' , 'spain');
+
+//ORDERBY col ASC|DESC
+SELECT DISTINCT country
+FROM suplliers
+ORDERBY country DESC
+
+//MAX MIN
+//select last date from country germany
+ SELECT MAX(shipdate)
+ FROM orders
+ WHERE shipcountry='germany';       o/p : 27/12/1998
+
+ //AVG SUM
+ SELECT AVG(salary)    SELECT SUM(customers)
+ FROM customers         
+ WHERE country='Brazil';
+
+//LIKE -- match pattern
+WHERE country LIKE 'a%' - country name starts with and
+WHERE country LIKE '%e' - country name ends with e
+WHERE country LIKE '%bob%' - country name with bob in name somewhere
+WHERE country LIKE 'A%i' - country name starts with  A and ends with i
+
+//AS - alias for name -- alias an only be used in SELECT , ORDERBY , GROUPBY
+SELECT unitprice*quantity as Totalspent
+FROM orders
+WHERE Totalspent > 10;  //////////// ERROR   ////
+
+//AS - alias for name -- alias an only be used in SELECT , ORDERBY , GROUPBY
+SELECT unitprice*quantity as Totalspent
+FROM orders
+ORDERBY Totalspent ASC; //////////// WILL WORK
+
+//LIMIT - output 
+SELECT product_name,unitprice AS Total_cost
+FROM order
+ORDERBY Total_cost DESC
+LIMIT 3;
+
+//NULL value - means unknown not empty
+//count customers who have no region
+SELECT COUNT(*)
+FROM customers
+WHERE region IS NULL;   //IS 
+
+//INNER JOIN uses equality-conditional statement = 
+SELECT col_name
+FROM table1
+INNER JOIN table2 ON table1.col_name = table2.col_name
+
+//OUTER JOIN
+SELECT col_name
+FROM table1
+JOIN table2 ON table1.col_name = table2.col_name
+
+//Eg
+// customers - company_name
+// orders    - orderdate , shipcountry
+SELECT company_name , order_date , shipcountry
+FROM orders
+JOIN customers ON customers.customerid = orders.customer_id;
+
+//using castesian product
+SELECT company_name , order_date , shipcountry
+FROM orders,customers
+WHERE customers.customerid = orders.customer_id;
 
